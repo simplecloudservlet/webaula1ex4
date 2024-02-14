@@ -1,31 +1,62 @@
+<!-- TODO1: Crie uma nova divisao e mostre o texto em amarelo-->
+<!-- TODO2: Modifique a fonte de uma divisao <div> para 3em (CSS Units: https://www.w3schools.com/cssref/css_units.php)-->
+<!-- TODO3: Modifique a borda da tabela para 2px -->
+
 <!DOCTYPE html>
 <html lang="bzs">
+
 <head>
-<meta charset="UTF-8">
-<title>Comércio Eletrônico</title>
+	<meta charset="UTF-8">
+	<title>Comércio Eletrônico</title>
 	<style>
+		/*# indica um item de formatacao especifico*/
 		#azul {
 			color: #0044ff;
 			font-size: 1.5em;
 		}
+
 		#verde {
 			color: #00fe57;
 			font-size: 5.5em;
 		}
+
 		#tabela {
 			border: 1px solid black;
 		}
 	</style>
 </head>
+
 <body>
 
 	<h1>webaula1ex4</h1>
-	
-	<!-- Divisao de paragrafos: permite formatacao especifica do trecho -->
+
+	<!-- Divisao de paragrafos: permite formatacao especifica do trecho (inline) -->
+	<!-- Primeira prioridade: definicao do style inline-->
+	<div style="font-size: 2em; color: #0044ff;">
+		Fonte tamanho duplo (inline)
+	</div>
+
+	<!-- Segunda prioridade: o atributo 'id' eh usado para obter a formatacao especifica-->
+	<div id="azul">
+		Fonte tamanho simples (&lt;style&gt; definido antes)
+	</div>
+
+	<div id="azul">
+		Fonte tamanho simples (&lt;style&gt; definido antes)
+	</div>
+
+	<div id="amarelo">
+		Fonte tamanho duplo (&lt;style&gt; definido antes)
+	</div>
+
+	<div id="amarelo">
+		Fonte tamanho duplo (&lt;style&gt; definido antes)
+	</div>
+
 	<!-- No cabecalho, <style> define o estilo do paragrafo-->
 	<p id="azul">Linha azul</p>
 	<p id="verde">Linha verde</p>
-	
+
 	<!-- Listas -->
 	<h3>Lista de produtos</h3>
 	<ul>
@@ -33,7 +64,7 @@
 		<li>Borracha</li>
 		<li>Lápis</li>
 	</ul>
-	
+
 	<!-- Listas numeradas -->
 	<h3>Lista de prioridades</h3>
 	<ol>
@@ -41,7 +72,7 @@
 		<li>Atacado</li>
 		<li>Varejo</li>
 	</ol>
-	
+
 	<!-- Tabela -->
 	<h3>Preço da Venda</h3>
 	<table id="tabela">
@@ -62,14 +93,15 @@
 			<th>3,00</th>
 		</tr>
 	</table>
-	
+
 	<figure>
 		<img src="img/vendas.png" width="100" height="50" alt="vendas">
 		<figcaption>
 			<p>Comércio Eletrônico.</p>
 		</figcaption>
 	</figure>
-	
+
 	<a href="pagina2.html">Página 2</a>
 </body>
+
 </html>
