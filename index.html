@@ -9,13 +9,21 @@
 	<meta charset="UTF-8">
 	<title>Comércio Eletrônico</title>
 	<style>
-		/*# indica um item de formatacao especifico*/
-		#azul {
+		/*# indica a formatacao para um id unico */
+		#azul_tipo1 {
+			color: #0044ff;
+			font-size: 1.5em;
+		}
+		#azul_tipo2 {
 			color: #0044ff;
 			font-size: 1.5em;
 		}
 
-		#verde {
+		#verde_tipo1 {
+			color: #00fe57;
+			font-size: 5.5em;
+		}
+		#verde_tipo2 {
 			color: #00fe57;
 			font-size: 5.5em;
 		}
@@ -36,26 +44,27 @@
 		Fonte tamanho duplo (inline)
 	</div>
 
-	<!-- Segunda prioridade: o atributo 'id' eh usado para obter a formatacao especifica-->
-	<div id="azul">
+	<!-- Segunda prioridade: o atributo 'id' eh usado para obter uma unica formatacao especifica para esse item-->
+	<!-- O atributo 'id' deve ser unico no HTML -->
+	<div id="azul_tipo1">
 		Fonte tamanho simples (&lt;style&gt; definido antes)
 	</div>
 
-	<div id="azul">
+	<div id="azul_tipo2">
 		Fonte tamanho simples (&lt;style&gt; definido antes)
 	</div>
 
-	<div id="amarelo">
+	<div id="amarelo_tipo1">
 		Fonte tamanho duplo (&lt;style&gt; definido antes)
 	</div>
 
-	<div id="amarelo">
+	<div id="amarelo_tipo2">
 		Fonte tamanho duplo (&lt;style&gt; definido antes)
 	</div>
 
 	<!-- No cabecalho, <style> define o estilo do paragrafo-->
-	<p id="azul">Linha azul</p>
-	<p id="verde">Linha verde</p>
+	<p id="azul_tipo3">Linha azul</p>
+	<p id="verde_tipo1">Linha verde</p>
 
 	<!-- Listas -->
 	<h3>Lista de produtos</h3>
